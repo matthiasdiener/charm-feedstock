@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/UIUC-PPL/charm/archive/refs/tags/v{{ version }}.tar.gz 
-  sha256: {{ sha256 }}
+  url: https://github.com/UIUC-PPL/charm/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 83fc2be261f9a586b6595a3589c385a8160006fa872fbfa26659e1363feeb72b
 
 build:
-  number: 0 
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -23,12 +23,12 @@ requirements:
 
 test:
   commands:
-    - echo true 
+    - echo true
 
 about:
-  home: https://github.com/UIUC-PPL/charm/ 
-  license: Custom 
-  license_file: LICENSE 
+  home: https://github.com/UIUC-PPL/charm/
+  license: Custom
+  license_file: LICENSE
   summary: The Charm++ parallel programming system.
   doc_url: https://github.com/UIUC-PPL/charm/
   dev_url: https://charm.readthedocs.io
