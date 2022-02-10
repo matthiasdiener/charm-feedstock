@@ -1,0 +1,38 @@
+{% set name = "charm" %}
+{% set version = "7.0.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/UIUC-PPL/charm/archive/refs/tags/v{{ version }}.tar.gz 
+  sha256: {{ sha256 }}
+
+build:
+  number: 0 
+  skip: true  # [win]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cmake
+    - make
+    - sysroot_linux-64 2.17  # [linux64]
+
+test:
+  commands:
+    - echo true 
+
+about:
+  home: https://github.com/UIUC-PPL/charm/ 
+  license: Custom 
+  license_file: LICENSE 
+  summary: The Charm++ parallel programming system.
+  doc_url: https://github.com/UIUC-PPL/charm/
+  dev_url: https://charm.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - matthiasdiener
