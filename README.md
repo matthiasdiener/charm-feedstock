@@ -1,7 +1,7 @@
 About charm
 ===========
 
-Home: https://github.com/UIUC-PPL/charm/
+Home: https://charm.cs.illinois.edu
 
 Package license: Custom
 
